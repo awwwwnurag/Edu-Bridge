@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduBridge · Learning Together</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-icon">🎓</div>
+          <div>
+            <p class="brand-title">EduBridge</p>
+            <p class="brand-subtitle">Learning Together</p>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <a class="nav-item" href="index.html">
+            <span>🏠</span>
+            Home
+          </a>
+          <a class="nav-item active" href="my-courses.html"><span>📘</span>My Courses</a>
+          <a class="nav-item" href="video-library.html"><span>🎞️</span>Video Library</a>
+          <a class="nav-item" href="reading-room.html"><span>📚</span>Reading Room</a>
+          <a class="nav-item" href="test-center.html"><span>📝</span>Test Center</a>
+          <a class="nav-item" href="live-classes.html"><span>💬</span>Live Classes</a>
+          <a class="nav-item" href="my-progress.html"><span>📊</span>My Progress</a>
+        </nav>
+
+        <div class="tip-card">
+          <p class="tip-title">Keep Learning! ✨</p>
+          <p class="tip-body">Education is the key to success</p>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        
+        <header class="top-bar">
+          <button class="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-toggle-icon">🌞</span>
+          </button>
+          <div class="user-menu">
+            <button class="user-button" aria-haspopup="true" aria-expanded="false">
+              <span class="user-avatar-initial">P</span>
+            </button>
+            <div class="user-dropdown" role="menu">
+              <button class="user-dropdown-item" data-action="account">My Account</button>
+              <button class="user-dropdown-item" data-action="settings">Settings</button>
+              <button class="user-dropdown-item" data-action="logout">Logout</button>
+            </div>
+          </div>
+        </header>
+        <section class="courses" id="my-courses">
+          <header>
+            <p class="eyebrow">Choose your language and grade</p>
+            <h2>Explore Courses 📚</h2>
+            <p class="subtext">Browse structured playlists tailored to every learning level.</p>
+          </header>
+
+          <div class="filter-card">
+            <h3>Filter Courses</h3>
+            <div class="filter-group">
+              <p class="label">Grade Level</p>
+              <div class="chip-row">
+                <button class="chip active" data-grade="all">All Grades</button>
+                <button class="chip" data-grade="1">Grade 1</button>
+                <button class="chip" data-grade="2">Grade 2</button>
+                <button class="chip" data-grade="3">Grade 3</button>
+                <button class="chip" data-grade="4">Grade 4</button>
+                <button class="chip" data-grade="5">Grade 5</button>
+                <button class="chip" data-grade="6">Grade 6</button>
+                <button class="chip" data-grade="7">Grade 7</button>
+                <button class="chip" data-grade="8">Grade 8</button>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <p class="label">Language</p>
+              <div class="chip-row">
+                <button class="chip active mint" data-language="all">All Languages</button>
+                <button class="chip" data-language="English">English</button>
+                <button class="chip" data-language="Hindi">Hindi</button>
+                <button class="chip" data-language="Tamil">Tamil</button>
+                <button class="chip" data-language="Telugu">Telugu</button>
+                <button class="chip" data-language="Marathi">Marathi</button>
+                <button class="chip" data-language="Bengali">Bengali</button>
+                <button class="chip" data-language="Gujarati">Gujarati</button>
+                <button class="chip" data-language="Kannada">Kannada</button>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <p class="label">Content Type</p>
+              <div class="chip-row">
+                <button class="chip active" data-type="all">All Content</button>
+                <button class="chip" data-type="videos">Videos</button>
+                <button class="chip" data-type="books">Books</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="courses-grid" id="courses-container">
+            <!-- Course content will be dynamically loaded here -->
+          </div>
+        </section>
+      </main>
+    </div>
+    <script defer src="/auth.js"></script>
+    <script defer src="/ui.js"></script>
+  </body>
+</html>

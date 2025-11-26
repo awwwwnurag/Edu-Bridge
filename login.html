@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - EduBridge</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="auth-body">
+  <div class="auth-container">
+    <div class="auth-card">
+      <div class="auth-avatar">🎓</div>
+      <p class="auth-eyebrow">Welcome to EduBridge</p>
+      <h2 class="auth-title">Sign in to continue</h2>
+
+      <div class="auth-panels">
+        <div class="auth-panel" data-panel="signin">
+          <button class="auth-google" data-action="complete">
+            <span class="auth-google-icon">G</span>
+            Continue with Google
+          </button>
+          <div class="auth-divider"><span>OR</span></div>
+          <form class="auth-form" data-form="signin">
+            <label>
+              Email
+              <input type="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Password
+              <input type="password" placeholder="••••••••" required />
+            </label>
+            <button class="primary full" type="submit">Sign in</button>
+          </form>
+          <div class="auth-links">
+            <button class="auth-link" data-screen="reset">Forgot password?</button>
+            <span>Need an account? <button class="auth-link" data-screen="signup">Sign up</button></span>
+          </div>
+        </div>
+
+        <div class="auth-panel" data-panel="reset">
+          <button class="auth-back" data-screen="signin">← Back to sign in</button>
+          <h3>Reset your password</h3>
+          <p class="auth-subtitle">Enter your email and we'll send you a link to reset your password.</p>
+          <form class="auth-form" data-form="reset">
+            <label>
+              Email
+              <input type="email" placeholder="you@example.com" required />
+            </label>
+            <button class="primary full" type="submit">Send reset link</button>
+          </form>
+        </div>
+
+        <div class="auth-panel" data-panel="signup">
+          <button class="auth-back" data-screen="signin">← Back to sign in</button>
+          <h3>Create your account</h3>
+          <form class="auth-form" data-form="signup">
+            <label>
+              Full Name
+              <input type="text" placeholder="Enter your full name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Password
+              <input type="password" minlength="8" placeholder="Min. 8 characters" required />
+            </label>
+            <label>
+              Confirm password
+              <input type="password" minlength="8" placeholder="Re-enter password" required />
+            </label>
+            <button class="primary full" type="submit">Create account</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    /* Auth page specific styles */
+    .auth-body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      font-family: 'Inter', sans-serif;
+      position: relative;
+    }
+
+    .auth-container {
+      width: 100%;
+      max-width: 600px;
+      padding: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .auth-card {
+      background: white;
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      text-align: center;
+    }
+
+    .auth-avatar {
+      font-size: 3rem;
+      margin-bottom: 16px;
+    }
+
+    .auth-eyebrow {
+      color: #64748b;
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin: 0 0 8px 0;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .auth-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 0 0 24px 0;
+      color: #1e293b;
+    }
+
+    .auth-subtitle {
+      color: #64748b;
+      font-size: 0.875rem;
+      margin: 0 0 24px 0;
+      line-height: 1.5;
+    }
+
+    .auth-google {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #e2e8f0;
+      background: white;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-bottom: 16px;
+    }
+
+    .auth-google:hover {
+      background: #f8fafc;
+      border-color: #cbd5e1;
+    }
+
+    .auth-google-icon {
+      font-size: 1.2rem;
+      color: #4285f4;
+    }
+
+    .auth-divider {
+      position: relative;
+      text-align: center;
+      margin: 24px 0;
+    }
+
+    .auth-divider::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: #e2e8f0;
+    }
+
+    .auth-divider span {
+      background: white;
+      padding: 0 16px;
+      color: #64748b;
+      font-size: 0.875rem;
+      position: relative;
+    }
+
+    .auth-form {
+      text-align: left;
+    }
+
+    .auth-form label {
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    .auth-form label span {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 8px;
+      color: #374151;
+      font-size: 0.875rem;
+    }
+
+    .auth-form input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #d1d5db;
+      border-radius: 8px;
+      font-size: 0.875rem;
+      transition: all 0.2s;
+      box-sizing: border-box;
+    }
+
+    .auth-form input:focus {
+      outline: none;
+      border-color: #667eea;
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+
+    .auth-links {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 0.875rem;
+      color: #64748b;
+    }
+
+    .auth-link {
+      background: none;
+      border: none;
+      color: #667eea;
+      cursor: pointer;
+      font-weight: 500;
+      text-decoration: underline;
+      padding: 0;
+      margin: 0;
+    }
+
+    .auth-link:hover {
+      color: #5a67d8;
+    }
+
+    .auth-back {
+      background: none;
+      border: none;
+      color: #667eea;
+      cursor: pointer;
+      font-weight: 500;
+      margin-bottom: 24px;
+      padding: 0;
+    }
+
+    .auth-back:hover {
+      color: #5a67d8;
+    }
+
+    .auth-panel {
+      display: none;
+    }
+
+    .auth-panel[data-panel="signin"] {
+      display: block;
+    }
+
+    .primary {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 20px -5px rgba(102, 126, 234, 0.5);
+    }
+
+    .primary.full {
+      width: 100%;
+    }
+
+    .auth-error {
+      background: #fef2f2 !important;
+      color: #dc2626 !important;
+      padding: 12px 16px !important;
+      border-radius: 8px !important;
+      border: 2px solid #dc2626 !important;
+      margin-bottom: 16px !important;
+      font-size: 14px !important;
+      font-weight: 600 !important;
+      text-align: center !important;
+      animation: shake 0.5s ease-in-out !important;
+      box-shadow: 0 4px 6px rgba(239, 68, 68, 0.1) !important;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      10% { transform: translateX(-8px); }
+      20% { transform: translateX(8px); }
+      30% { transform: translateX(-8px); }
+      40% { transform: translateX(8px); }
+      50% { transform: translateX(-6px); }
+      60% { transform: translateX(6px); }
+      70% { transform: translateX(-4px); }
+      80% { transform: translateX(4px); }
+      90% { transform: translateX(-2px); }
+    }
+
+    /* Dark mode */
+    body[data-theme="dark"] .auth-card {
+      background: #1e293b;
+      color: #f1f5f9;
+    }
+
+    body[data-theme="dark"] .auth-title {
+      color: #f1f5f9;
+    }
+
+    body[data-theme="dark"] .auth-form input {
+      background: #334155;
+      border-color: #475569;
+      color: #f1f5f9;
+    }
+
+    body[data-theme="dark"] .auth-google {
+      background: #334155;
+      border-color: #475569;
+      color: #f1f5f9;
+    }
+
+    body[data-theme="dark"] .auth-google:hover {
+      background: #475569;
+    }
+  </style>
+
+  <script src="auth.js"></script>
+</body>
+</html>

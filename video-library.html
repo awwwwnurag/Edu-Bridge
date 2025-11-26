@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduBridge · Learning Together</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-icon">🎓</div>
+          <div>
+            <p class="brand-title">EduBridge</p>
+            <p class="brand-subtitle">Learning Together</p>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <a class="nav-item" href="index.html">
+            <span>🏠</span>
+            Home
+          </a>
+          <a class="nav-item" href="my-courses.html"><span>📘</span>My Courses</a>
+          <a class="nav-item active" href="video-library.html"><span>🎞️</span>Video Library</a>
+          <a class="nav-item" href="reading-room.html"><span>📚</span>Reading Room</a>
+          <a class="nav-item" href="test-center.html"><span>📝</span>Test Center</a>
+          <a class="nav-item" href="live-classes.html"><span>💬</span>Live Classes</a>
+          <a class="nav-item" href="my-progress.html"><span>📊</span>My Progress</a>
+        </nav>
+
+        <div class="tip-card">
+          <p class="tip-title">Keep Learning! ✨</p>
+          <p class="tip-body">Education is the key to success</p>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="top-bar">
+          <button class="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-toggle-icon">🌞</span>
+          </button>
+          <div class="user-menu">
+            <button class="user-button" aria-haspopup="true" aria-expanded="false">
+              <span class="user-avatar-initial">P</span>
+            </button>
+            <div class="user-dropdown" role="menu">
+              <button class="user-dropdown-item" data-action="account">My Account</button>
+              <button class="user-dropdown-item" data-action="settings">Settings</button>
+              <button class="user-dropdown-item" data-action="logout">Logout</button>
+            </div>
+          </div>
+        </header>
+        <section class="video-library" id="video-library">
+          <header>
+            <h2>Video Library 🎬</h2>
+            <p>Watch engaging lectures recorded in multiple languages.</p>
+          </header>
+
+          <div class="search-bar">
+            <div class="search-field">
+              <span>🔍</span>
+              <input type="text" placeholder="Search videos..." />
+            </div>
+            <div class="search-field select">
+              <span>🎓</span>
+              <select>
+                <option>All Courses</option>
+                <option>Mathematics</option>
+                <option>Science</option>
+                <option>English</option>
+                <option>Hindi</option>
+                <option>Social Studies</option>
+                <option>Moral Science</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="video-grid">
+            <!-- Mathematics Videos - Magnet Brains -->
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/XWtJd7mMMio/hqdefault.jpg" alt="Mathematics - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 45 min</div>
+                <h3>Maths Class 8 - Algebraic Expressions</h3>
+                <p>Complete chapter explanation of algebraic expressions and identities for Class 8 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 8</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Mathematics</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 125K views</span>
+                </div>
+                <button class="primary outline" data-video-id="XWtJd7mMMio">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/SOJ0GgKuivg/hqdefault.jpg" alt="Mathematics Mock Test - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 38 min</div>
+                <h3>Class 8 Maths Mock Test Paper Solution</h3>
+                <p>Complete solution of Class 8 Mathematics mock test paper with detailed explanations.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 8</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Mathematics</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 89K views</span>
+                </div>
+                <button class="primary outline" data-video-id="SOJ0GgKuivg">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/2Jad_cF81-M/hqdefault.jpg" alt="Mathematics Class 1 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 20 min</div>
+                <h3>Numbers from Ten to Twenty - Class 1 Maths</h3>
+                <p>Learn two-digit numbers and counting with engaging examples for Class 1 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 1</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Mathematics</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 45K views</span>
+                </div>
+                <button class="primary outline" data-video-id="2Jad_cF81-M">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/cx4qIHN-GmE/hqdefault.jpg" alt="Mathematics Class 2 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 16 min</div>
+                <h3>Addition for Class 2 - Magnet Brains</h3>
+                <p>Learn addition with carry over for Class 2 students with clear examples.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 2</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Mathematics</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 38K views</span>
+                </div>
+                <button class="primary outline" data-video-id="cx4qIHN-GmE">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/7KP1KD8SkYg/hqdefault.jpg" alt="Mathematics Class 3 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 22 min</div>
+                <h3>Multiplication Class 3 - Magnet Brains</h3>
+                <p>Introduction to multiplication concepts for Class 3 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 3</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Mathematics</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 52K views</span>
+                </div>
+                <button class="primary outline" data-video-id="7KP1KD8SkYg">Watch Now</button>
+              </div>
+            </article>
+
+            <!-- Science Videos -->
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/QRUhRRYi8wY/hqdefault.jpg" alt="Science - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 42 min</div>
+                <h3>Class 8 Science - Crop Production</h3>
+                <p>Complete chapter on crop production and management with practical examples.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 8</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Science</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 156K views</span>
+                </div>
+                <button class="primary outline" data-video-id="QRUhRRYi8wY">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/mUNJ4KCNR3g/hqdefault.jpg" alt="Science Mock Test" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 35 min</div>
+                <h3>Class 8 Science Mock Test Solution</h3>
+                <p>Complete solution of Class 8 Science mock test paper with detailed explanations.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 8</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Science</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 92K views</span>
+                </div>
+                <button class="primary outline" data-video-id="mUNJ4KCNR3g">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/science1/400/225.jpg" alt="Plants and Animals" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 28 min</div>
+                <h3>Plants Around Us</h3>
+                <p>Learn about different types of plants and their importance for Grade 1 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 1</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Science</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 41K views</span>
+                </div>
+                <button class="primary outline">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/science2/400/225.jpg" alt="Human Body" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 32 min</div>
+                <h3>Our Body Parts</h3>
+                <p>Understanding different body parts and their functions for Grade 2 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 2</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Science</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 37K views</span>
+                </div>
+                <button class="primary outline">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/science3/400/225.jpg" alt="Solar System" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 40 min</div>
+                <h3>Solar System for Kids</h3>
+                <p>Explore planets and our solar system for Grade 3 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 3</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Science</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 68K views</span>
+                </div>
+                <button class="primary outline">Watch Now</button>
+              </div>
+            </article>
+
+            <!-- English Videos - Magnet Brains -->
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/j2x7wQcEbvg/hqdefault.jpg" alt="English - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 28 min</div>
+                <h3>Class 8 English - The Best Christmas Present</h3>
+                <p>Complete explanation of the English chapter with vocabulary and comprehension.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 8</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">English</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 78K views</span>
+                </div>
+                <button class="primary outline" data-video-id="j2x7wQcEbvg">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/bHg81yyz5Qw/hqdefault.jpg" alt="English Grammar - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 32 min</div>
+                <h3>Class 8 English Grammar - Tenses</h3>
+                <p>Complete explanation of all tenses with examples and practice exercises.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 8</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">English</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 103K views</span>
+                </div>
+                <button class="primary outline" data-video-id="bHg81yyz5Qw">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/7JqCCm4YHqM/hqdefault.jpg" alt="English Class 1 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 35 min</div>
+                <h3>A Happy Child - Class 1 English</h3>
+                <p>Complete explanation of the English poem with comprehension for Class 1 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 1</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">English</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 35K views</span>
+                </div>
+                <button class="primary outline" data-video-id="7JqCCm4YHqM">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/Qh8E_uPc8V8/hqdefault.jpg" alt="English Class 2 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 30 min</div>
+                <h3>First Day at School - Class 2 English</h3>
+                <p>Complete explanation of the English story with vocabulary for Class 2 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 2</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">English</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 42K views</span>
+                </div>
+                <button class="primary outline" data-video-id="Qh8E_uPc8V8">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/J1vqX7LqRjY/hqdefault.jpg" alt="English Class 3 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 40 min</div>
+                <h3>Story Writing Skills - Class 3 English</h3>
+                <p>Learn to write creative stories with examples for Class 3 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 3</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">English</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 48K views</span>
+                </div>
+                <button class="primary outline" data-video-id="J1vqX7LqRjY">Watch Now</button>
+              </div>
+            </article>
+
+            <!-- Hindi Videos -->
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/v5HVY1DO-ZY/hqdefault.jpg" alt="Hindi - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 40 min</div>
+                <h3>कक्षा 8 हिंदी - ध्वनि</h3>
+                <p>ध्वनि अध्याय की पूरी व्याख्या, कविता परिचय और प्रश्न-उत्तर।</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 8</span>
+                  <span class="pill accent">Hindi</span>
+                  <span class="pill">Hindi</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 92K views</span>
+                </div>
+                <button class="primary outline" data-video-id="v5HVY1DO-ZY">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/OswuqU24224/hqdefault.jpg" alt="Hindi Grammar" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 36 min</div>
+                <h3>कक्षा 8 हिंदी व्याकरण - संज्ञा</h3>
+                <p>संज्ञा के भेद, उदाहरण और अभ्यास प्रश्न।</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 8</span>
+                  <span class="pill accent">Hindi</span>
+                  <span class="pill">Hindi</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 58K views</span>
+                </div>
+                <button class="primary outline" data-video-id="OswuqU24224">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/hindi1/400/225.jpg" alt="Hindi Stories" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 18 min</div>
+                <h3>झूल का मकान - Class 1 Hindi</h3>
+                <p>Hindi story with moral lesson for Grade 1 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 1</span>
+                  <span class="pill accent">Hindi</span>
+                  <span class="pill">Hindi</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 28K views</span>
+                </div>
+                <button class="primary outline">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/hindi2/400/225.jpg" alt="Hindi Reading" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 22 min</div>
+                <h3>नटखट चूहा - Class 2 Hindi</h3>
+                <p>Hindi story about clever mouse for Grade 2 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 2</span>
+                  <span class="pill accent">Hindi</span>
+                  <span class="pill">Hindi</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 31K views</span>
+                </div>
+                <button class="primary outline">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/hindi3/400/225.jpg" alt="Hindi Writing" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 26 min</div>
+                <h3>हिंदी कहानी लेखन</h3>
+                <p>Learn to write stories in Hindi for Grade 3 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 3</span>
+                  <span class="pill accent">Hindi</span>
+                  <span class="pill">Hindi</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 35K views</span>
+                </div>
+                <button class="primary outline">Watch Now</button>
+              </div>
+            </article>
+
+            <!-- Social Studies Videos -->
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/3qweEKlbgNI/hqdefault.jpg" alt="Social Studies - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 44 min</div>
+                <h3>Class 8 Social Science - Resources</h3>
+                <p>Complete chapter on resources and development with maps and practical examples.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 8</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Social Studies</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 118K views</span>
+                </div>
+                <button class="primary outline" data-video-id="3qweEKlbgNI">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/fUEBR8lfq7U/hqdefault.jpg" alt="History - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 48 min</div>
+                <h3>Class 8 History - How, When and Where</h3>
+                <p>Introduction to history, dates, and historical sources with engaging examples.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 8</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Social Studies</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 134K views</span>
+                </div>
+                <button class="primary outline" data-video-id="fUEBR8lfq7U">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/social1/400/225.jpg" alt="Community Helpers" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 24 min</div>
+                <h3>Community Helpers</h3>
+                <p>Learn about different community helpers for Grade 1 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 1</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Social Studies</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 39K views</span>
+                </div>
+                <button class="primary outline">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/social2/400/225.jpg" alt="National Symbols" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 28 min</div>
+                <h3>National Symbols of India</h3>
+                <p>Understanding Indian national symbols for Grade 2 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 2</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Social Studies</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 44K views</span>
+                </div>
+                <button class="primary outline">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/social3/400/225.jpg" alt="Ancient History" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 32 min</div>
+                <h3>Ancient Civilizations</h3>
+                <p>Learn about ancient civilizations for Grade 3 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 3</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Social Studies</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 51K views</span>
+                </div>
+                <button class="primary outline">Watch Now</button>
+              </div>
+            </article>
+
+            <!-- Moral Science Videos -->
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/moral1/400/225.jpg" alt="Good Habits" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 20 min</div>
+                <h3>Good Habits for Kids</h3>
+                <p>Developing good daily habits for Grade 1 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 1</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Moral Science</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 33K views</span>
+                </div>
+                <button class="primary outline">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/moral2/400/225.jpg" alt="Being Kind" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 18 min</div>
+                <h3>Being Kind and Helpful</h3>
+                <p>Importance of kindness and empathy for Grade 2 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 2</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Moral Science</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 29K views</span>
+                </div>
+                <button class="primary outline">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/moral3/400/225.jpg" alt="Honesty" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 22 min</div>
+                <h3>Honesty is the Best Policy</h3>
+                <p>Why honesty matters for Grade 3 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 3</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Moral Science</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 36K views</span>
+                </div>
+                <button class="primary outline">Watch Now</button>
+              </div>
+            </article>
+
+            <!-- Additional Videos to reach 50 - Magnet Brains -->
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/cx4qIHN-GmE/hqdefault.jpg" alt="Mathematics Class 4 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 30 min</div>
+                <h3>Fractions Made Simple - Class 4 Maths</h3>
+                <p>Understanding fractions with examples for Class 4 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 4</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Mathematics</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 47K views</span>
+                </div>
+                <button class="primary outline" data-video-id="cx4qIHN-GmE">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/mQrlgH97p94/hqdefault.jpg" alt="Science Class 4 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 25 min</div>
+                <h3>Electricity Basics - Class 4 Science</h3>
+                <p>Basic concepts of electric circuits for Class 4 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 4</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Science</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 53K views</span>
+                </div>
+                <button class="primary outline" data-video-id="mQrlgH97p94">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/7JqCCm4YHqM/hqdefault.jpg" alt="English Class 4 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 28 min</div>
+                <h3>Grammar Rules - Class 4 English</h3>
+                <p>Basic English grammar for Class 4 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 4</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">English</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 41K views</span>
+                </div>
+                <button class="primary outline" data-video-id="7JqCCm4YHqM">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/nTyf_1-SaxU/hqdefault.jpg" alt="Hindi Class 4 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 24 min</div>
+                <h3>हिंदी व्याकरण - Class 4 Hindi</h3>
+                <p>Hindi grammar rules for Class 4 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 4</span>
+                  <span class="pill accent">Hindi</span>
+                  <span class="pill">Hindi</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 38K views</span>
+                </div>
+                <button class="primary outline" data-video-id="nTyf_1-SaxU">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/k-ToUceOUb4/hqdefault.jpg" alt="Social Studies Class 4 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 30 min</div>
+                <h3>Geography Basics - Class 4 Social Studies</h3>
+                <p>Introduction to geography for Class 4 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 4</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Social Studies</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 45K views</span>
+                </div>
+                <button class="primary outline" data-video-id="k-ToUceOUb4">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/94Q2MT_MvDc/hqdefault.jpg" alt="Moral Science Class 4 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 22 min</div>
+                <h3>Being Responsible - Class 4 Moral Science</h3>
+                <p>Understanding responsibility for Class 4 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 4</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Moral Science</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 32K views</span>
+                </div>
+                <button class="primary outline" data-video-id="94Q2MT_MvDc">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/maths5/400/225.jpg" alt="Decimals" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 40 min</div>
+                <h3>Decimals and Percentages</h3>
+                <p>Understanding decimals for Grade 5 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 5</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Mathematics</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 49K views</span>
+                </div>
+                <button class="primary outline">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/science5/400/225.jpg" alt="Chemistry" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 36 min</div>
+                <h3>Chemical Reactions</h3>
+                <p>Introduction to chemical changes for Grade 5 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 5</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Science</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 55K views</span>
+                </div>
+                <button class="primary outline">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/english5/400/225.jpg" alt="Literature" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 32 min</div>
+                <h3>Literature Appreciation</h3>
+                <p>Understanding literary devices for Grade 5 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 5</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">English</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 43K views</span>
+                </div>
+                <button class="primary outline">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/hindi5/400/225.jpg" alt="Hindi Literature" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 30 min</div>
+                <h3>हिंदी साहित्य</h3>
+                <p>Introduction to Hindi literature for Grade 5 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 5</span>
+                  <span class="pill accent">Hindi</span>
+                  <span class="pill">Hindi</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 40K views</span>
+                </div>
+                <button class="primary outline">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/social5/400/225.jpg" alt="History" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 35 min</div>
+                <h3>Indian History</h3>
+                <p>Overview of Indian history for Grade 5 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 5</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Social Studies</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 48K views</span>
+                </div>
+                <button class="primary outline">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://picsum.photos/seed/moral5/400/225.jpg" alt="Leadership" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 28 min</div>
+                <h3>Leadership Qualities</h3>
+                <p>Building leadership skills for Grade 5 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 5</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Moral Science</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 35K views</span>
+                </div>
+                <button class="primary outline">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/2Jad_cF81-M/hqdefault.jpg" alt="Mathematics Class 6 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 38 min</div>
+                <h3>Algebra Basics - Class 6 Maths</h3>
+                <p>Introduction to algebra for Class 6 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 6</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Mathematics</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 52K views</span>
+                </div>
+                <button class="primary outline" data-video-id="2Jad_cF81-M">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/7KP1KD8SkYg/hqdefault.jpg" alt="Science Class 6 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 35 min</div>
+                <h3>Physics Fundamentals - Class 6 Science</h3>
+                <p>Basic physics concepts for Class 6 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 6</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Science</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 57K views</span>
+                </div>
+                <button class="primary outline" data-video-id="7KP1KD8SkYg">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/cx4qIHN-GmE/hqdefault.jpg" alt="English Class 6 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 32 min</div>
+                <h3>Creative Writing - Class 6 English</h3>
+                <p>Enhancing writing skills for Class 6 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 6</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">English</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 46K views</span>
+                </div>
+                <button class="primary outline" data-video-id="cx4qIHN-GmE">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/mQrlgH97p94/hqdefault.jpg" alt="Hindi Class 6 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 30 min</div>
+                <h3>हिंदी रचनात्मक लेखन - Class 6 Hindi</h3>
+                <p>Creative writing in Hindi for Class 6 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 6</span>
+                  <span class="pill accent">Hindi</span>
+                  <span class="pill">Hindi</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 42K views</span>
+                </div>
+                <button class="primary outline" data-video-id="mQrlgH97p94">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/94Q2MT_MvDc/hqdefault.jpg" alt="Social Studies Class 6 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 35 min</div>
+                <h3>Civics and Government - Class 6 Social Studies</h3>
+                <p>Understanding government for Class 6 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 6</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Social Studies</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 50K views</span>
+                </div>
+                <button class="primary outline" data-video-id="94Q2MT_MvDc">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/k-ToUceOUb4/hqdefault.jpg" alt="Moral Science Class 6 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 28 min</div>
+                <h3>Social Justice - Class 6 Moral Science</h3>
+                <p>Understanding social justice for Class 6 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 6</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Moral Science</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 38K views</span>
+                </div>
+                <button class="primary outline" data-video-id="k-ToUceOUb4">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/7JqCCm4YHqM/hqdefault.jpg" alt="Mathematics Class 7 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 40 min</div>
+                <h3>Advanced Geometry - Class 7 Maths</h3>
+                <p>Geometry concepts for Class 7 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 7</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Mathematics</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 54K views</span>
+                </div>
+                <button class="primary outline" data-video-id="7JqCCm4YHqM">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/Qh8E_uPc8V8/hqdefault.jpg" alt="Science Class 7 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 38 min</div>
+                <h3>Biology Fundamentals - Class 7 Science</h3>
+                <p>Cell structure and organisms for Class 7 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 7</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Science</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 59K views</span>
+                </div>
+                <button class="primary outline" data-video-id="Qh8E_uPc8V8">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/J1vqX7LqRjY/hqdefault.jpg" alt="English Class 7 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 34 min</div>
+                <h3>Literature Analysis - Class 7 English</h3>
+                <p>Analyzing literature for Class 7 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 7</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">English</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 48K views</span>
+                </div>
+                <button class="primary outline" data-video-id="J1vqX7LqRjY">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/3qweEKlbgNI/hqdefault.jpg" alt="Hindi Class 7 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 32 min</div>
+                <h3>हिंदी साहित्य विश्लेषण - Class 7 Hindi</h3>
+                <p>Analysis of Hindi literature for Class 7 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 7</span>
+                  <span class="pill accent">Hindi</span>
+                  <span class="pill">Hindi</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 44K views</span>
+                </div>
+                <button class="primary outline" data-video-id="3qweEKlbgNI">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/fUEBR8lfq7U/hqdefault.jpg" alt="Social Studies Class 7 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 37 min</div>
+                <h3>World History Overview - Class 7 Social Studies</h3>
+                <p>Global history for Class 7 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 7</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Social Studies</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 52K views</span>
+                </div>
+                <button class="primary outline" data-video-id="fUEBR8lfq7U">Watch Now</button>
+              </div>
+            </article>
+
+            <article class="video-card">
+              <img src="https://img.youtube.com/vi/94Q2MT_MvDc/hqdefault.jpg" alt="Moral Science Class 7 - Magnet Brains" />
+              <div class="video-body">
+                <div class="video-duration">⏱ 30 min</div>
+                <h3>Human Rights - Class 7 Moral Science</h3>
+                <p>Understanding human rights for Class 7 students.</p>
+                <div class="video-meta">
+                  <span class="pill">Grade 7</span>
+                  <span class="pill accent">English</span>
+                  <span class="pill">Moral Science</span>
+                </div>
+                <div class="video-stats">
+                  <span>👁 40K views</span>
+                </div>
+                <button class="primary outline" data-video-id="94Q2MT_MvDc">Watch Now</button>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script defer src="/auth.js"></script>
+    <script defer src="/ui.js"></script>
+  </body>
+</html>

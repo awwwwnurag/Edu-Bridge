@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduBridge · Learning Together</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-icon">🎓</div>
+          <div>
+            <p class="brand-title">EduBridge</p>
+            <p class="brand-subtitle">Learning Together</p>
+          </div>
+        </div>
+
+        <nav class="nav">
+          <a class="nav-item" href="index.html">
+            <span>🏠</span>
+            Home
+          </a>
+          <a class="nav-item" href="my-courses.html"><span>📘</span>My Courses</a>
+          <a class="nav-item" href="video-library.html"><span>🎞️</span>Video Library</a>
+          <a class="nav-item" href="reading-room.html"><span>📚</span>Reading Room</a>
+          <a class="nav-item" href="test-center.html"><span>📝</span>Test Center</a>
+          <a class="nav-item" href="live-classes.html"><span>💬</span>Live Classes</a>
+          <a class="nav-item active" href="my-progress.html"><span>📊</span>My Progress</a>
+        </nav>
+
+        <div class="tip-card">
+          <p class="tip-title">Keep Learning! ✨</p>
+          <p class="tip-body">Education is the key to success</p>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        
+        <header class="top-bar">
+          <button class="theme-toggle" aria-label="Toggle theme">
+            <span class="theme-toggle-icon">🌞</span>
+          </button>
+          <div class="user-menu">
+            <button class="user-button" aria-haspopup="true" aria-expanded="false">
+              <span class="user-avatar-initial">P</span>
+            </button>
+            <div class="user-dropdown" role="menu">
+              <button class="user-dropdown-item" data-action="account">My Account</button>
+              <button class="user-dropdown-item" data-action="settings">Settings</button>
+              <button class="user-dropdown-item" data-action="logout">Logout</button>
+            </div>
+          </div>
+        </header>
+        <section class="my-progress" id="my-progress">
+          <header>
+            <h2>My Progress 📊</h2>
+            <p>Track your learning journey and achievements.</p>
+          </header>
+
+          <div class="progress-stats">
+            <article class="stat-card coral">
+              <span>🎬</span>
+              <div>
+                <h3>14</h3>
+                <p>Videos Watched</p>
+              </div>
+            </article>
+            <article class="stat-card lemon">
+              <span>🏅</span>
+              <div>
+                <h3>3</h3>
+                <p>Tests Completed</p>
+              </div>
+            </article>
+            <article class="stat-card teal">
+              <span>📈</span>
+              <div>
+                <h3>80.0%</h3>
+                <p>Average Score</p>
+              </div>
+            </article>
+            <article class="stat-card purple">
+              <span>⏱</span>
+              <div>
+                <h3>11h</h3>
+                <p>Learning Time</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="course-progress">
+            <h3>Course Progress</h3>
+            <div class="course-card">
+              <div class="course-head">
+                <div>
+                  <p class="course-title">Mathematics</p>
+                  <span class="pill accent">Grade 5</span>
+                </div>
+                <p class="percent">27% Complete</p>
+              </div>
+              <div class="progress-bar">
+                <span style="width: 27%"></span>
+              </div>
+              <ul>
+                <li><strong>Videos</strong> 4/15</li>
+                <li><strong>Tests</strong> 2</li>
+                <li><strong>Avg Score</strong> 66.0%</li>
+              </ul>
+            </div>
+
+            <div class="course-card">
+              <div class="course-head">
+                <div>
+                  <p class="course-title">Science</p>
+                  <span class="pill accent">Grade 6</span>
+                </div>
+                <p class="percent">42% Complete</p>
+              </div>
+              <div class="progress-bar">
+                <span style="width: 42%"></span>
+              </div>
+              <ul>
+                <li><strong>Videos</strong> 5/12</li>
+                <li><strong>Tests</strong> 1</li>
+                <li><strong>Avg Score</strong> 77.2%</li>
+              </ul>
+            </div>
+
+            <div class="course-card">
+              <div class="course-head">
+                <div>
+                  <p class="course-title">Social Studies</p>
+                  <span class="pill accent">Grade 7</span>
+                </div>
+                <p class="percent">63% Complete</p>
+              </div>
+              <div class="progress-bar">
+                <span style="width: 63%"></span>
+              </div>
+              <ul>
+                <li><strong>Videos</strong> 5/8</li>
+                <li><strong>Tests</strong> 1</li>
+                <li><strong>Avg Score</strong> 80.6%</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="recent-results">
+            <h3>Recent Test Results</h3>
+            <div class="result-row">
+              <div>
+                <p class="result-title">World Geography Challenge</p>
+                <p class="result-date">24/11/2025</p>
+              </div>
+              <p class="result-score">80.0% <span>16/20</span></p>
+            </div>
+            <div class="result-row">
+              <div>
+                <p class="result-title">Science: Plants and Photosynthesis</p>
+                <p class="result-date">21/11/2025</p>
+              </div>
+              <p class="result-score">80.0% <span>20/25</span></p>
+            </div>
+            <div class="result-row">
+              <div>
+                <p class="result-title">Fractions Mastery Quiz</p>
+                <p class="result-date">18/11/2025</p>
+              </div>
+              <p class="result-score">80.0% <span>12/15</span></p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script defer src="/auth.js"></script>
+      <script defer src="/auth.js"></script>
+    <script defer src="/ui.js"></script>
+  </body>
+</html>
